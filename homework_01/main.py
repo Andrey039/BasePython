@@ -48,11 +48,11 @@ def filter_numbers(nums_list, list_type):
         event_list = [nums for nums in nums_list if nums % 2 == 0]
         return event_list
 
-    if list_type == ODD:
+    elif list_type == ODD:
         odd_list = [nums for nums in nums_list if nums % 2 != 0]
         return odd_list
 
-    if list_type == PRIME:
+    elif list_type == PRIME:
         return is_prime(nums_list)
 
 
